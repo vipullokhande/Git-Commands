@@ -1,1 +1,40 @@
-Coms
+//To initialize your project
+$ git init
+
+//to clone from github
+$ git clone "url from repo(https/SSH)"
+
+//check status
+$ git status
+
+//add to unstage area first time
+$ git add --a (for all files once)
+$ git add filename.txt
+
+//add to staging area
+$ git commit -m "message"
+
+//staging area file to unstage
+$ git rm --cached filename.txt
+$ git restore filename.txt
+
+//staging area file delete
+$ git rm --f filename.txt
+
+//staging area file changes to unchange
+$ git checkout -- filename.txt
+
+//see all recent commit & commit message & author & date-time
+$ git log
+
+//see what recent changes are
+$ git log -p
+
+//see recent commits priority wise also for commit time
+$ git log -1/2/3
+
+//see only statistics i.e. in which files how changes affected
+$ git log --stat
+
+//see information (oneline for only commits & commit messages | short for commit & commit message & author | full for commit & commit message & author & who commited info )
+$ git log --pretty=oneline/short/full
